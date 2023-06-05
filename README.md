@@ -61,7 +61,7 @@ To be able to override the brush, we need to convert FeedbackControl into a cust
 </ResourceDictionary>
 ```
 
-Now, in MainPage.xaml, we can override the specific brush::
+Now, in MainPage.xaml, we can override the specific brush:
 
 ```
 <local:ZTemplatedFeedbackControl Text="Potato 1">
@@ -71,7 +71,13 @@ Now, in MainPage.xaml, we can override the specific brush::
 </local:ZTemplatedFeedbackControl>
 ```
 
-In conclusion, to enable style overriding for XAML resources, we need to:
+So, to enable style overriding for XAML resources, we need to:
 - Make sure that the control is a custom control with a control template (and not a user control)
 - Use the brush as a ThemeResource instead of a StaticResource within the control.
 
+## Conclusions
+We've been exploring options to enable brush overriding for a UWP control that we're planning to distribute as part of a NuGet package. Here's what we've found so far:
+
+1. **UserControl Approach**: If we decide to keep `ZFeedbackControl` as a UserControl, it seems the only way to allow brush overriding is to expose the brushes as dependency properties within the control. This would allow users to directly set the `ZFeedbackForegroundBrush` property on the `ZFeedbackControl` instance, overriding the brush defined in the control's resources or template. However, we need to investigate further if we can use `x:Bind` with a ThemeResource. For instance, if the user has `ZForegroundBrush` as a ThemeResource, we need to confirm if `ZFeedbackForegroundBrush` will update on theme change.
+
+2. **CustomControl Approach**: If we're open to defining `ZFeedbackControl` as a custom control (with its structure defined in a ControlTemplate), users can override `ZTemplatedFeedbackForegroundBrush` directly in the parent control/page's resources. Additionally, the can also override `ZForegroundBrush` or `SystemControlForegroundBaseHighBrush` for the change to be reflected in all other controls using these brushes. This approach seems more suitable for a pure UI component (like `ZCheckBox`) that doesn't need to interact with business logic directly.
