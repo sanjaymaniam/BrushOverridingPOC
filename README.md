@@ -5,7 +5,7 @@ POC to check style overriding behaviour in UWP.
 
 ## Style Overriding Behaviour in UWP
  
-Consider a UserControl called ZFeedbackControl. Within FeedbackControl.Resources, we define a resource named ZFeedbackForegroundBrush and use it within the control like this:
+Consider a UserControl called ZFeedbackControl. Within ZFeedbackControl.Resources, we define a resource named ZFeedbackForegroundBrush and use it within the control like this:
  
 ```xml
 <UserControl.Resources>
