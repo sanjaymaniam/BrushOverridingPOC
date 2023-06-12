@@ -10,7 +10,7 @@
     <PackageArchitecture>x64</PackageArchitecture>
     <PackageIdentityName>de2a17b7-4150-45b9-977a-78b694c6f46c</PackageIdentityName>
     <PackageIdentityPublisher>CN=Administrator</PackageIdentityPublisher>
-    <IntermediateOutputPath>C:\Users\Administrator\Desktop\BrushOverridingPOC\App1\BrushOverridingPOC\obj\x64\Debug\</IntermediateOutputPath>
+    <IntermediateOutputPath>C:\Users\Administrator\dev\POC\test\BrushOverridingPOC\BrushOverridingPOC\obj\x64\Debug\</IntermediateOutputPath>
     <RemoteDeploymentType>
     </RemoteDeploymentType>
     <PackageRegistrationPath>
@@ -18,7 +18,7 @@
     <RemoveNonLayoutFiles>true</RemoveNonLayoutFiles>
     <DeployOptionalPackages>false</DeployOptionalPackages>
     <WindowsSdkPath>C:\Program Files %28x86%29\Windows Kits\10\</WindowsSdkPath>
-    <LayoutDir>C:\Users\Administrator\Desktop\BrushOverridingPOC\App1\BrushOverridingPOC\bin\x64\Debug\AppX</LayoutDir>
+    <LayoutDir>C:\Users\Administrator\dev\POC\test\BrushOverridingPOC\BrushOverridingPOC\bin\x64\Debug\AppX</LayoutDir>
     <RegisteredManifestChecksum>5D4987B4218BB944F24F394461C1277E5F57ACE69F53F5C03E6AFC086034E1A3</RegisteredManifestChecksum>
     <RegisteredPackageMoniker>de2a17b7-4150-45b9-977a-78b694c6f46c_1.0.0.0_x64__75cr2b68sm664</RegisteredPackageMoniker>
     <RegisteredUserModeAppID>de2a17b7-4150-45b9-977a-78b694c6f46c_75cr2b68sm664!App</RegisteredUserModeAppID>
@@ -27,110 +27,138 @@
     <RegisteredVersion>1.0.0.0</RegisteredVersion>
   </PropertyGroup>
   <ItemGroup>
-    <AppXManifest Include="C:\Users\Administrator\Desktop\BrushOverridingPOC\App1\BrushOverridingPOC\bin\x64\Debug\Core\AppxManifest.xml">
+    <AppXManifest Include="C:\Users\Administrator\dev\POC\test\BrushOverridingPOC\BrushOverridingPOC\bin\x64\Debug\Core\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2023-06-05T18:20:07.655</Modified>
+      <Modified>2023-06-12T15:02:20.640</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
-    <AppxPackagedFile Include="C:\Users\Administrator\Desktop\BrushOverridingPOC\App1\BrushOverridingPOC\bin\x64\Debug\BrushOverridingPOC.exe">
+    <AppxPackagedFile Include="C:\Users\Administrator\dev\POC\test\BrushOverridingPOC\BrushOverridingPOC\bin\x64\Debug\BrushOverridingPOC.exe">
       <PackagePath>entrypoint\BrushOverridingPOC.exe</PackagePath>
-      <Modified>2023-06-05T18:20:04.766</Modified>
+      <Modified>2023-06-12T15:02:19.934</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Program Files %28x86%29\Microsoft SDKs\UWPNuGetPackages\runtime.win10-x64.microsoft.netcore.universalwindowsplatform\6.2.14\runtimes\win10-x64\lib\uap10.0.15138\System.Runtime.dll">
       <PackagePath>System.Runtime.dll</PackagePath>
       <Modified>2022-06-10T16:53:28.000</Modified>
     </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Administrator\dev\POC\test\BrushOverridingPOC\Core\bin\x64\Debug\Core.dll">
+      <PackagePath>Core.dll</PackagePath>
+      <Modified>2023-06-12T14:51:34.892</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Administrator\dev\POC\test\BrushOverridingPOC\Feedback\bin\x64\Debug\Feedback.dll">
+      <PackagePath>Feedback.dll</PackagePath>
+      <Modified>2023-06-12T14:53:58.058</Modified>
+    </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Program Files %28x86%29\Windows Kits\10\bin\10.0.22621.0\XamlCompiler\Microsoft.UI.Xaml.Markup.winmd">
       <PackagePath>Microsoft.UI.Xaml.Markup.winmd</PackagePath>
       <Modified>2022-10-19T08:58:50.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Administrator\Desktop\BrushOverridingPOC\App1\BrushOverridingPOC\Properties\Default.rd.xml">
+    <AppxPackagedFile Include="C:\Users\Administrator\dev\POC\test\BrushOverridingPOC\Core\bin\x64\Debug\Core\CommonResourceDictionary.xbf">
+      <PackagePath>Core\CommonResourceDictionary.xbf</PackagePath>
+      <Modified>2023-06-12T14:51:34.832</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Administrator\dev\POC\test\BrushOverridingPOC\Core\bin\x64\Debug\Core\Themes\Generic.xbf">
+      <PackagePath>Core\Themes\Generic.xbf</PackagePath>
+      <Modified>2023-06-12T14:51:34.833</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Administrator\dev\POC\test\BrushOverridingPOC\Feedback\bin\x64\Debug\Feedback\ZTemplatedFeedbackControl.xbf">
+      <PackagePath>Feedback\ZTemplatedFeedbackControl.xbf</PackagePath>
+      <Modified>2023-06-12T14:53:58.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Administrator\dev\POC\test\BrushOverridingPOC\Feedback\bin\x64\Debug\Feedback\Themes\Generic.xbf">
+      <PackagePath>Feedback\Themes\Generic.xbf</PackagePath>
+      <Modified>2023-06-12T14:53:58.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Administrator\dev\POC\test\BrushOverridingPOC\Core\bin\x64\Debug\Core\Core.xr.xml">
+      <PackagePath>Core\Core.xr.xml</PackagePath>
+      <Modified>2023-06-12T11:44:26.484</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Administrator\dev\POC\test\BrushOverridingPOC\Feedback\bin\x64\Debug\Feedback\Feedback.xr.xml">
+      <PackagePath>Feedback\Feedback.xr.xml</PackagePath>
+      <Modified>2023-06-12T14:53:57.993</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Administrator\dev\POC\test\BrushOverridingPOC\BrushOverridingPOC\bin\x64\Debug\App.xbf">
+      <PackagePath>App.xbf</PackagePath>
+      <Modified>2023-06-12T15:02:19.874</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Administrator\dev\POC\test\BrushOverridingPOC\BrushOverridingPOC\bin\x64\Debug\Themes\Generic.xbf">
+      <PackagePath>Themes\Generic.xbf</PackagePath>
+      <Modified>2023-06-12T15:02:19.873</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Administrator\dev\POC\test\BrushOverridingPOC\BrushOverridingPOC\bin\x64\Debug\ZTemplatedFeedbackControl.xbf">
+      <PackagePath>ZTemplatedFeedbackControl.xbf</PackagePath>
+      <Modified>2023-06-12T15:02:19.874</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Administrator\dev\POC\test\BrushOverridingPOC\BrushOverridingPOC\bin\x64\Debug\OverrideResourceDictionary.xbf">
+      <PackagePath>OverrideResourceDictionary.xbf</PackagePath>
+      <Modified>2023-06-12T15:02:19.874</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Administrator\dev\POC\test\BrushOverridingPOC\BrushOverridingPOC\bin\x64\Debug\ZCommonDictionary.xbf">
+      <PackagePath>ZCommonDictionary.xbf</PackagePath>
+      <Modified>2023-06-12T15:02:19.874</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Administrator\dev\POC\test\BrushOverridingPOC\BrushOverridingPOC\bin\x64\Debug\MainPage.xbf">
+      <PackagePath>MainPage.xbf</PackagePath>
+      <Modified>2023-06-12T15:02:19.874</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Administrator\dev\POC\test\BrushOverridingPOC\BrushOverridingPOC\bin\x64\Debug\ZFeedbackControl.xbf">
+      <PackagePath>ZFeedbackControl.xbf</PackagePath>
+      <Modified>2023-06-12T15:02:19.875</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Administrator\dev\POC\test\BrushOverridingPOC\BrushOverridingPOC\bin\x64\Debug\BrushOverridingPOC.xr.xml">
+      <PackagePath>BrushOverridingPOC.xr.xml</PackagePath>
+      <Modified>2023-06-12T14:55:16.763</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Administrator\dev\POC\test\BrushOverridingPOC\BrushOverridingPOC\Properties\Default.rd.xml">
       <PackagePath>Properties\Default.rd.xml</PackagePath>
-      <Modified>2023-06-05T18:01:46.962</Modified>
+      <Modified>2023-06-09T10:52:48.598</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Administrator\Desktop\BrushOverridingPOC\App1\BrushOverridingPOC\Assets\LockScreenLogo.scale-200.png">
+    <AppxPackagedFile Include="C:\Users\Administrator\dev\POC\test\BrushOverridingPOC\BrushOverridingPOC\Assets\LockScreenLogo.scale-200.png">
       <PackagePath>Assets\LockScreenLogo.scale-200.png</PackagePath>
-      <Modified>2023-02-16T09:39:25.699</Modified>
+      <Modified>2023-06-09T10:52:48.589</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Administrator\Desktop\BrushOverridingPOC\App1\BrushOverridingPOC\Assets\SplashScreen.scale-200.png">
+    <AppxPackagedFile Include="C:\Users\Administrator\dev\POC\test\BrushOverridingPOC\BrushOverridingPOC\Assets\SplashScreen.scale-200.png">
       <PackagePath>Assets\SplashScreen.scale-200.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2023-02-16T09:39:25.712</Modified>
+      <Modified>2023-06-09T10:52:48.590</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Administrator\Desktop\BrushOverridingPOC\App1\BrushOverridingPOC\Assets\Square150x150Logo.scale-200.png">
+    <AppxPackagedFile Include="C:\Users\Administrator\dev\POC\test\BrushOverridingPOC\BrushOverridingPOC\Assets\Square150x150Logo.scale-200.png">
       <PackagePath>Assets\Square150x150Logo.scale-200.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2023-02-16T09:39:25.714</Modified>
+      <Modified>2023-06-09T10:52:48.591</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Administrator\Desktop\BrushOverridingPOC\App1\BrushOverridingPOC\Assets\Square44x44Logo.scale-200.png">
+    <AppxPackagedFile Include="C:\Users\Administrator\dev\POC\test\BrushOverridingPOC\BrushOverridingPOC\Assets\Square44x44Logo.scale-200.png">
       <PackagePath>Assets\Square44x44Logo.scale-200.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2023-02-16T09:39:25.716</Modified>
+      <Modified>2023-06-09T10:52:48.591</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Administrator\Desktop\BrushOverridingPOC\App1\BrushOverridingPOC\Assets\Square44x44Logo.targetsize-24_altform-unplated.png">
+    <AppxPackagedFile Include="C:\Users\Administrator\dev\POC\test\BrushOverridingPOC\BrushOverridingPOC\Assets\Square44x44Logo.targetsize-24_altform-unplated.png">
       <PackagePath>Assets\Square44x44Logo.targetsize-24_altform-unplated.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2023-02-16T09:39:25.718</Modified>
+      <Modified>2023-06-09T10:52:48.592</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Administrator\Desktop\BrushOverridingPOC\App1\BrushOverridingPOC\Assets\StoreLogo.png">
+    <AppxPackagedFile Include="C:\Users\Administrator\dev\POC\test\BrushOverridingPOC\BrushOverridingPOC\Assets\StoreLogo.png">
       <PackagePath>Assets\StoreLogo.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2023-02-16T09:39:25.720</Modified>
+      <Modified>2023-06-09T10:52:48.592</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Administrator\Desktop\BrushOverridingPOC\App1\BrushOverridingPOC\Assets\Wide310x150Logo.scale-200.png">
+    <AppxPackagedFile Include="C:\Users\Administrator\dev\POC\test\BrushOverridingPOC\BrushOverridingPOC\Assets\Wide310x150Logo.scale-200.png">
       <PackagePath>Assets\Wide310x150Logo.scale-200.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2023-02-16T09:39:25.722</Modified>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Administrator\Desktop\BrushOverridingPOC\App1\BrushOverridingPOC\bin\x64\Debug\BrushOverridingPOC.xr.xml">
-      <PackagePath>BrushOverridingPOC.xr.xml</PackagePath>
-      <Modified>2023-06-05T18:20:04.636</Modified>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Administrator\Desktop\BrushOverridingPOC\App1\BrushOverridingPOC\bin\x64\Debug\App.xbf">
-      <PackagePath>App.xbf</PackagePath>
-      <Modified>2023-06-05T18:20:04.679</Modified>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Administrator\Desktop\BrushOverridingPOC\App1\BrushOverridingPOC\bin\x64\Debug\Themes\Generic.xbf">
-      <PackagePath>Themes\Generic.xbf</PackagePath>
-      <Modified>2023-06-05T18:20:04.678</Modified>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Administrator\Desktop\BrushOverridingPOC\App1\BrushOverridingPOC\bin\x64\Debug\ZTemplatedFeedbackControl.xbf">
-      <PackagePath>ZTemplatedFeedbackControl.xbf</PackagePath>
-      <Modified>2023-06-05T18:20:04.678</Modified>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Administrator\Desktop\BrushOverridingPOC\App1\BrushOverridingPOC\bin\x64\Debug\OverrideResourceDictionary.xbf">
-      <PackagePath>OverrideResourceDictionary.xbf</PackagePath>
-      <Modified>2023-06-05T18:20:04.679</Modified>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Administrator\Desktop\BrushOverridingPOC\App1\BrushOverridingPOC\bin\x64\Debug\testControl.xbf">
-      <PackagePath>testControl.xbf</PackagePath>
-      <Modified>2023-06-05T18:20:04.680</Modified>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Administrator\Desktop\BrushOverridingPOC\App1\BrushOverridingPOC\bin\x64\Debug\ZCommonDictionary.xbf">
-      <PackagePath>ZCommonDictionary.xbf</PackagePath>
-      <Modified>2023-06-05T18:20:04.679</Modified>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Administrator\Desktop\BrushOverridingPOC\App1\BrushOverridingPOC\bin\x64\Debug\MainPage.xbf">
-      <PackagePath>MainPage.xbf</PackagePath>
-      <Modified>2023-06-05T18:20:04.680</Modified>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Administrator\Desktop\BrushOverridingPOC\App1\BrushOverridingPOC\bin\x64\Debug\ZFeedbackControl.xbf">
-      <PackagePath>ZFeedbackControl.xbf</PackagePath>
-      <Modified>2023-06-05T18:20:04.680</Modified>
+      <Modified>2023-06-09T10:52:48.593</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Program Files %28x86%29\Windows Kits\10\UnionMetadata\10.0.22621.0\Windows.winmd">
       <PackagePath>WinMetadata\Windows.winmd</PackagePath>
       <Modified>2022-10-19T12:35:02.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Administrator\Desktop\BrushOverridingPOC\App1\BrushOverridingPOC\bin\x64\Debug\resources.pri">
+    <AppxPackagedFile Include="C:\Users\Administrator\dev\POC\test\BrushOverridingPOC\BrushOverridingPOC\bin\x64\Debug\resources.pri">
       <PackagePath>resources.pri</PackagePath>
-      <Modified>2023-06-05T18:20:05.370</Modified>
+      <Modified>2023-06-12T14:51:43.209</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Administrator\Desktop\BrushOverridingPOC\App1\BrushOverridingPOC\bin\x64\Debug\Core\BrushOverridingPOC.exe">
+    <AppxPackagedFile Include="C:\Users\Administrator\dev\POC\test\BrushOverridingPOC\BrushOverridingPOC\bin\x64\Debug\Core\BrushOverridingPOC.exe">
       <PackagePath>BrushOverridingPOC.exe</PackagePath>
-      <Modified>2023-06-05T18:20:07.283</Modified>
+      <Modified>2023-06-12T15:02:20.633</Modified>
     </AppxPackagedFile>
   </ItemGroup>
   <ItemGroup>

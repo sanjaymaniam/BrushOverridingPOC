@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "i7lJU2Ctjsy/1pUT/hyytryN6Va86BwxkabeFnS+ypacxFLYV3vexl/i53L9uh/N7PkffxAOfNlWFTXU5TcsvA==",
+  "dgSpecHash": "+tXn09Vc13Gi5fteC95CjBehLJ5Kf/ShSrhT0RLa8ym94jRoykyKqMnA9xXv8yhJ4N8Q2bypP+98W1dJgRR+FA==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Administrator\\Desktop\\BrushOverridingPOC\\App1\\BrushOverridingPOC\\BrushOverridingPOC.csproj",
+  "projectFilePath": "C:\\Users\\Administrator\\dev\\POC\\test\\BrushOverridingPOC\\BrushOverridingPOC\\BrushOverridingPOC.csproj",
   "expectedPackageFiles": [
     "C:\\Program Files (x86)\\Microsoft SDKs\\UWPNuGetPackages\\microsoft.net.native.compiler\\2.2.12-rel-31116-00\\microsoft.net.native.compiler.2.2.12-rel-31116-00.nupkg.sha512",
     "C:\\Program Files (x86)\\Microsoft SDKs\\UWPNuGetPackages\\microsoft.net.uwpcoreruntimesdk\\2.2.14\\microsoft.net.uwpcoreruntimesdk.2.2.14.nupkg.sha512",

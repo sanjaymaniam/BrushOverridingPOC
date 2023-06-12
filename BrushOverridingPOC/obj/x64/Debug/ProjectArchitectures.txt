@@ -1,1 +1,4 @@
-C:\Users\Administrator\Desktop\BrushOverridingPOC\App1\BrushOverridingPOC\BrushOverridingPOC.csproj;x64
+C:\Users\Administrator\dev\POC\test\BrushOverridingPOC\BrushOverridingPOC\BrushOverridingPOC.csproj;x64
+C:\Users\Administrator\dev\POC\test\BrushOverridingPOC\Core\Core.csproj;x64
+C:\Users\Administrator\dev\POC\test\BrushOverridingPOC\Core\Core.csproj;x64
+C:\Users\Administrator\dev\POC\test\BrushOverridingPOC\Feedback\Feedback.csproj;x64

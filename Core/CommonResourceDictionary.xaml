@@ -1,0 +1,16 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+    <ResourceDictionary.ThemeDictionaries>
+        <ResourceDictionary x:Key="Light">
+            <Color x:Key="ZFGColor">Red</Color>
+            <!--<SolidColorBrush x:Key="ZFGBrush" Color="{StaticResource ZFGColor}" />-->
+        </ResourceDictionary>
+        <ResourceDictionary x:Key="Dark">
+            <Color x:Key="ZFGColor">Green</Color>
+            <!--<SolidColorBrush x:Key="ZFGBrush" Color="{StaticResource ZFGColor}" />-->
+        </ResourceDictionary>
+        <ResourceDictionary x:Key="Default">
+            <Color x:Key="ZFGColor">Blue</Color>
+            <!--<SolidColorBrush x:Key="ZFGBrush" Color="{StaticResource ZFGColor}" />-->
+        </ResourceDictionary>
+    </ResourceDictionary.ThemeDictionaries>
+</ResourceDictionary>

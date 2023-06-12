@@ -568,6 +568,33 @@
           "build/runtime.win10-x86.Microsoft.Net.UWPCoreRuntimeSdk.props": {},
           "build/runtime.win10-x86.Microsoft.Net.UWPCoreRuntimeSdk.targets": {}
         }
+      },
+      "Core/1.0.0": {
+        "type": "project",
+        "framework": "UAP,Version=v10.0.17763",
+        "dependencies": {
+          "Microsoft.NETCore.UniversalWindowsPlatform": "6.2.14"
+        },
+        "compile": {
+          "bin/placeholder/Core.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Core.dll": {}
+        }
+      },
+      "Feedback/1.0.0": {
+        "type": "project",
+        "framework": "UAP,Version=v10.0.17763",
+        "dependencies": {
+          "Core": "1.0.0",
+          "Microsoft.NETCore.UniversalWindowsPlatform": "6.2.14"
+        },
+        "compile": {
+          "bin/placeholder/Feedback.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Feedback.dll": {}
+        }
       }
     },
     "UAP,Version=v10.0.17763/win10-arm": {
@@ -1315,6 +1342,33 @@
         "build": {
           "build/runtime.win10-x86.Microsoft.Net.UWPCoreRuntimeSdk.props": {},
           "build/runtime.win10-x86.Microsoft.Net.UWPCoreRuntimeSdk.targets": {}
+        }
+      },
+      "Core/1.0.0": {
+        "type": "project",
+        "framework": "UAP,Version=v10.0.17763",
+        "dependencies": {
+          "Microsoft.NETCore.UniversalWindowsPlatform": "6.2.14"
+        },
+        "compile": {
+          "bin/placeholder/Core.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Core.dll": {}
+        }
+      },
+      "Feedback/1.0.0": {
+        "type": "project",
+        "framework": "UAP,Version=v10.0.17763",
+        "dependencies": {
+          "Core": "1.0.0",
+          "Microsoft.NETCore.UniversalWindowsPlatform": "6.2.14"
+        },
+        "compile": {
+          "bin/placeholder/Feedback.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Feedback.dll": {}
         }
       }
     },
@@ -2065,6 +2119,33 @@
           "build/runtime.win10-x86.Microsoft.Net.UWPCoreRuntimeSdk.props": {},
           "build/runtime.win10-x86.Microsoft.Net.UWPCoreRuntimeSdk.targets": {}
         }
+      },
+      "Core/1.0.0": {
+        "type": "project",
+        "framework": "UAP,Version=v10.0.17763",
+        "dependencies": {
+          "Microsoft.NETCore.UniversalWindowsPlatform": "6.2.14"
+        },
+        "compile": {
+          "bin/placeholder/Core.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Core.dll": {}
+        }
+      },
+      "Feedback/1.0.0": {
+        "type": "project",
+        "framework": "UAP,Version=v10.0.17763",
+        "dependencies": {
+          "Core": "1.0.0",
+          "Microsoft.NETCore.UniversalWindowsPlatform": "6.2.14"
+        },
+        "compile": {
+          "bin/placeholder/Feedback.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Feedback.dll": {}
+        }
       }
     },
     "UAP,Version=v10.0.17763/win10-arm64-aot": {
@@ -2814,6 +2895,33 @@
           "build/runtime.win10-x86.Microsoft.Net.UWPCoreRuntimeSdk.props": {},
           "build/runtime.win10-x86.Microsoft.Net.UWPCoreRuntimeSdk.targets": {}
         }
+      },
+      "Core/1.0.0": {
+        "type": "project",
+        "framework": "UAP,Version=v10.0.17763",
+        "dependencies": {
+          "Microsoft.NETCore.UniversalWindowsPlatform": "6.2.14"
+        },
+        "compile": {
+          "bin/placeholder/Core.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Core.dll": {}
+        }
+      },
+      "Feedback/1.0.0": {
+        "type": "project",
+        "framework": "UAP,Version=v10.0.17763",
+        "dependencies": {
+          "Core": "1.0.0",
+          "Microsoft.NETCore.UniversalWindowsPlatform": "6.2.14"
+        },
+        "compile": {
+          "bin/placeholder/Feedback.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Feedback.dll": {}
+        }
       }
     },
     "UAP,Version=v10.0.17763/win10-x64": {
@@ -3561,6 +3669,33 @@
         "build": {
           "build/runtime.win10-x86.Microsoft.Net.UWPCoreRuntimeSdk.props": {},
           "build/runtime.win10-x86.Microsoft.Net.UWPCoreRuntimeSdk.targets": {}
+        }
+      },
+      "Core/1.0.0": {
+        "type": "project",
+        "framework": "UAP,Version=v10.0.17763",
+        "dependencies": {
+          "Microsoft.NETCore.UniversalWindowsPlatform": "6.2.14"
+        },
+        "compile": {
+          "bin/placeholder/Core.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Core.dll": {}
+        }
+      },
+      "Feedback/1.0.0": {
+        "type": "project",
+        "framework": "UAP,Version=v10.0.17763",
+        "dependencies": {
+          "Core": "1.0.0",
+          "Microsoft.NETCore.UniversalWindowsPlatform": "6.2.14"
+        },
+        "compile": {
+          "bin/placeholder/Feedback.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Feedback.dll": {}
         }
       }
     },
@@ -4311,6 +4446,33 @@
           "build/runtime.win10-x86.Microsoft.Net.UWPCoreRuntimeSdk.props": {},
           "build/runtime.win10-x86.Microsoft.Net.UWPCoreRuntimeSdk.targets": {}
         }
+      },
+      "Core/1.0.0": {
+        "type": "project",
+        "framework": "UAP,Version=v10.0.17763",
+        "dependencies": {
+          "Microsoft.NETCore.UniversalWindowsPlatform": "6.2.14"
+        },
+        "compile": {
+          "bin/placeholder/Core.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Core.dll": {}
+        }
+      },
+      "Feedback/1.0.0": {
+        "type": "project",
+        "framework": "UAP,Version=v10.0.17763",
+        "dependencies": {
+          "Core": "1.0.0",
+          "Microsoft.NETCore.UniversalWindowsPlatform": "6.2.14"
+        },
+        "compile": {
+          "bin/placeholder/Feedback.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Feedback.dll": {}
+        }
       }
     },
     "UAP,Version=v10.0.17763/win10-x86": {
@@ -5058,6 +5220,33 @@
         },
         "native": {
           "runtimes/win10-x86/nativeassets/uap10.0.15138/clrcompression.dll": {}
+        }
+      },
+      "Core/1.0.0": {
+        "type": "project",
+        "framework": "UAP,Version=v10.0.17763",
+        "dependencies": {
+          "Microsoft.NETCore.UniversalWindowsPlatform": "6.2.14"
+        },
+        "compile": {
+          "bin/placeholder/Core.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Core.dll": {}
+        }
+      },
+      "Feedback/1.0.0": {
+        "type": "project",
+        "framework": "UAP,Version=v10.0.17763",
+        "dependencies": {
+          "Core": "1.0.0",
+          "Microsoft.NETCore.UniversalWindowsPlatform": "6.2.14"
+        },
+        "compile": {
+          "bin/placeholder/Feedback.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Feedback.dll": {}
         }
       }
     },
@@ -5807,6 +5996,33 @@
         "build": {
           "build/runtime.win10-x86.Microsoft.Net.UWPCoreRuntimeSdk.props": {},
           "build/runtime.win10-x86.Microsoft.Net.UWPCoreRuntimeSdk.targets": {}
+        }
+      },
+      "Core/1.0.0": {
+        "type": "project",
+        "framework": "UAP,Version=v10.0.17763",
+        "dependencies": {
+          "Microsoft.NETCore.UniversalWindowsPlatform": "6.2.14"
+        },
+        "compile": {
+          "bin/placeholder/Core.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Core.dll": {}
+        }
+      },
+      "Feedback/1.0.0": {
+        "type": "project",
+        "framework": "UAP,Version=v10.0.17763",
+        "dependencies": {
+          "Core": "1.0.0",
+          "Microsoft.NETCore.UniversalWindowsPlatform": "6.2.14"
+        },
+        "compile": {
+          "bin/placeholder/Feedback.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Feedback.dll": {}
         }
       }
     }
@@ -10247,10 +10463,22 @@
         "runtimes/win10-x86/lib/uap10.0.15138/netstandard.dll",
         "runtimes/win10-x86/nativeassets/uap10.0.15138/clrcompression.dll"
       ]
+    },
+    "Core/1.0.0": {
+      "type": "project",
+      "path": "../Core/Core.csproj",
+      "msbuildProject": "../Core/Core.csproj"
+    },
+    "Feedback/1.0.0": {
+      "type": "project",
+      "path": "../Feedback/Feedback.csproj",
+      "msbuildProject": "../Feedback/Feedback.csproj"
     }
   },
   "projectFileDependencyGroups": {
     "UAP,Version=v10.0.17763": [
+      "Core >= 1.0.0",
+      "Feedback >= 1.0.0",
       "Microsoft.NETCore.UniversalWindowsPlatform >= 6.2.14"
     ]
   },
@@ -10262,11 +10490,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Administrator\\Desktop\\BrushOverridingPOC\\App1\\BrushOverridingPOC\\BrushOverridingPOC.csproj",
+      "projectUniqueName": "C:\\Users\\Administrator\\dev\\POC\\test\\BrushOverridingPOC\\BrushOverridingPOC\\BrushOverridingPOC.csproj",
       "projectName": "BrushOverridingPOC",
-      "projectPath": "C:\\Users\\Administrator\\Desktop\\BrushOverridingPOC\\App1\\BrushOverridingPOC\\BrushOverridingPOC.csproj",
+      "projectPath": "C:\\Users\\Administrator\\dev\\POC\\test\\BrushOverridingPOC\\BrushOverridingPOC\\BrushOverridingPOC.csproj",
       "packagesPath": "C:\\Users\\Administrator\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Administrator\\Desktop\\BrushOverridingPOC\\App1\\BrushOverridingPOC\\obj\\",
+      "outputPath": "C:\\Users\\Administrator\\dev\\POC\\test\\BrushOverridingPOC\\BrushOverridingPOC\\obj\\",
       "projectStyle": "PackageReference",
       "skipContentFileWrite": true,
       "fallbackFolders": [
@@ -10287,7 +10515,14 @@
       },
       "frameworks": {
         "uap10.0.17763": {
-          "projectReferences": {}
+          "projectReferences": {
+            "C:\\Users\\Administrator\\dev\\POC\\test\\BrushOverridingPOC\\Core\\Core.csproj": {
+              "projectPath": "C:\\Users\\Administrator\\dev\\POC\\test\\BrushOverridingPOC\\Core\\Core.csproj"
+            },
+            "C:\\Users\\Administrator\\dev\\POC\\test\\BrushOverridingPOC\\Feedback\\Feedback.csproj": {
+              "projectPath": "C:\\Users\\Administrator\\dev\\POC\\test\\BrushOverridingPOC\\Feedback\\Feedback.csproj"
+            }
+          }
         }
       }
     },

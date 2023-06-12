@@ -1,0 +1,43 @@
+﻿<ResourceDictionary
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:Feedback">
+
+    <!--<SolidColorBrush x:Key="ZTemplatedFeedbackForegroundBrush" Color="{ThemeResource ZFGColor}" />-->
+
+    <ResourceDictionary.ThemeDictionaries>
+        <ResourceDictionary x:Key="Dark">
+            <SolidColorBrush x:Key="ZTemplatedFeedbackForegroundBrush" Color="{ThemeResource ZFGColor}" />
+            <SolidColorBrush x:Key="ZFeedbackAccentColorBrush" Color="{Binding ColorDark, Source={ThemeResource ZAccentColorLow}, Mode=OneWay}" />
+        </ResourceDictionary>
+        <ResourceDictionary x:Key="Light">
+            <SolidColorBrush x:Key="ZTemplatedFeedbackForegroundBrush" Color="{ThemeResource ZFGColor}" />
+            <SolidColorBrush x:Key="ZFeedbackAccentColorBrush" Color="{Binding ColorLight, Source={ThemeResource ZAccentColorLow}, Mode=OneWay}" />
+        </ResourceDictionary>
+    </ResourceDictionary.ThemeDictionaries>
+
+    <!--  Define the control template for ZTemplatedFeedbackControl  -->
+    <Style TargetType="local:ZTemplatedFeedbackControl">
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate TargetType="local:ZTemplatedFeedbackControl">
+                    <StackPanel>
+                        <TextBlock
+                            FontSize="42"
+                            Foreground="{ThemeResource ZTemplatedFeedbackForegroundBrush}"
+                            Text="{TemplateBinding Text}" />
+
+
+                        <TextBlock
+                            Margin="0,4,0,0"
+                            FontSize="42"
+                            Foreground="{ThemeResource ZFeedbackAccentColorBrush}"
+                            Text="Colored with ZThemeColor" />
+
+                        <!--  can we use AttachmentControl here?  -->
+                    </StackPanel>
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+    </Style>
+</ResourceDictionary>

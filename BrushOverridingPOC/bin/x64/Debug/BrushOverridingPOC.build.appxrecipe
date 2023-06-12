@@ -10,94 +10,115 @@
     <PackageArchitecture>x64</PackageArchitecture>
     <PackageIdentityName>de2a17b7-4150-45b9-977a-78b694c6f46c</PackageIdentityName>
     <PackageIdentityPublisher>CN=Administrator</PackageIdentityPublisher>
-    <IntermediateOutputPath>C:\Users\Administrator\Desktop\BrushOverridingPOC\App1\BrushOverridingPOC\obj\x64\Debug\</IntermediateOutputPath>
+    <IntermediateOutputPath>C:\Users\Administrator\dev\POC\test\BrushOverridingPOC\BrushOverridingPOC\obj\x64\Debug\</IntermediateOutputPath>
     <RemoteDeploymentType></RemoteDeploymentType>
     <PackageRegistrationPath></PackageRegistrationPath>
     <RemoveNonLayoutFiles>true</RemoveNonLayoutFiles>
     <DeployOptionalPackages>false</DeployOptionalPackages>
     <WindowsSdkPath>C:\Program Files %28x86%29\Windows Kits\10\</WindowsSdkPath>
-    <LayoutDir>C:\Users\Administrator\Desktop\BrushOverridingPOC\App1\BrushOverridingPOC\bin\x64\Debug\AppX</LayoutDir>
+    <LayoutDir>C:\Users\Administrator\dev\POC\test\BrushOverridingPOC\BrushOverridingPOC\bin\x64\Debug\AppX</LayoutDir>
   </PropertyGroup>
   <ItemGroup>
-    <AppXManifest Include="C:\Users\Administrator\Desktop\BrushOverridingPOC\App1\BrushOverridingPOC\bin\x64\Debug\Core\AppxManifest.xml">
+    <AppXManifest Include="C:\Users\Administrator\dev\POC\test\BrushOverridingPOC\BrushOverridingPOC\bin\x64\Debug\Core\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
-    <AppxPackagedFile Include="C:\Users\Administrator\Desktop\BrushOverridingPOC\App1\BrushOverridingPOC\bin\x64\Debug\BrushOverridingPOC.exe">
+    <AppxPackagedFile Include="C:\Users\Administrator\dev\POC\test\BrushOverridingPOC\BrushOverridingPOC\bin\x64\Debug\BrushOverridingPOC.exe">
       <PackagePath>entrypoint\BrushOverridingPOC.exe</PackagePath>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Program Files %28x86%29\Microsoft SDKs\UWPNuGetPackages\runtime.win10-x64.microsoft.netcore.universalwindowsplatform\6.2.14\runtimes\win10-x64\lib\uap10.0.15138\System.Runtime.dll">
       <PackagePath>System.Runtime.dll</PackagePath>
     </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Administrator\dev\POC\test\BrushOverridingPOC\Core\bin\x64\Debug\Core.dll">
+      <PackagePath>Core.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Administrator\dev\POC\test\BrushOverridingPOC\Feedback\bin\x64\Debug\Feedback.dll">
+      <PackagePath>Feedback.dll</PackagePath>
+    </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Program Files %28x86%29\Windows Kits\10\bin\10.0.22621.0\XamlCompiler\Microsoft.UI.Xaml.Markup.winmd">
       <PackagePath>Microsoft.UI.Xaml.Markup.winmd</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Administrator\Desktop\BrushOverridingPOC\App1\BrushOverridingPOC\Properties\Default.rd.xml">
+    <AppxPackagedFile Include="C:\Users\Administrator\dev\POC\test\BrushOverridingPOC\Core\bin\x64\Debug\Core\CommonResourceDictionary.xbf">
+      <PackagePath>Core\CommonResourceDictionary.xbf</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Administrator\dev\POC\test\BrushOverridingPOC\Core\bin\x64\Debug\Core\Themes\Generic.xbf">
+      <PackagePath>Core\Themes\Generic.xbf</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Administrator\dev\POC\test\BrushOverridingPOC\Feedback\bin\x64\Debug\Feedback\ZTemplatedFeedbackControl.xbf">
+      <PackagePath>Feedback\ZTemplatedFeedbackControl.xbf</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Administrator\dev\POC\test\BrushOverridingPOC\Feedback\bin\x64\Debug\Feedback\Themes\Generic.xbf">
+      <PackagePath>Feedback\Themes\Generic.xbf</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Administrator\dev\POC\test\BrushOverridingPOC\Core\bin\x64\Debug\Core\Core.xr.xml">
+      <PackagePath>Core\Core.xr.xml</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Administrator\dev\POC\test\BrushOverridingPOC\Feedback\bin\x64\Debug\Feedback\Feedback.xr.xml">
+      <PackagePath>Feedback\Feedback.xr.xml</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Administrator\dev\POC\test\BrushOverridingPOC\BrushOverridingPOC\bin\x64\Debug\App.xbf">
+      <PackagePath>App.xbf</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Administrator\dev\POC\test\BrushOverridingPOC\BrushOverridingPOC\bin\x64\Debug\Themes\Generic.xbf">
+      <PackagePath>Themes\Generic.xbf</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Administrator\dev\POC\test\BrushOverridingPOC\BrushOverridingPOC\bin\x64\Debug\ZTemplatedFeedbackControl.xbf">
+      <PackagePath>ZTemplatedFeedbackControl.xbf</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Administrator\dev\POC\test\BrushOverridingPOC\BrushOverridingPOC\bin\x64\Debug\OverrideResourceDictionary.xbf">
+      <PackagePath>OverrideResourceDictionary.xbf</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Administrator\dev\POC\test\BrushOverridingPOC\BrushOverridingPOC\bin\x64\Debug\ZCommonDictionary.xbf">
+      <PackagePath>ZCommonDictionary.xbf</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Administrator\dev\POC\test\BrushOverridingPOC\BrushOverridingPOC\bin\x64\Debug\MainPage.xbf">
+      <PackagePath>MainPage.xbf</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Administrator\dev\POC\test\BrushOverridingPOC\BrushOverridingPOC\bin\x64\Debug\ZFeedbackControl.xbf">
+      <PackagePath>ZFeedbackControl.xbf</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Administrator\dev\POC\test\BrushOverridingPOC\BrushOverridingPOC\bin\x64\Debug\BrushOverridingPOC.xr.xml">
+      <PackagePath>BrushOverridingPOC.xr.xml</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Administrator\dev\POC\test\BrushOverridingPOC\BrushOverridingPOC\Properties\Default.rd.xml">
       <PackagePath>Properties\Default.rd.xml</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Administrator\Desktop\BrushOverridingPOC\App1\BrushOverridingPOC\Assets\LockScreenLogo.scale-200.png">
+    <AppxPackagedFile Include="C:\Users\Administrator\dev\POC\test\BrushOverridingPOC\BrushOverridingPOC\Assets\LockScreenLogo.scale-200.png">
       <PackagePath>Assets\LockScreenLogo.scale-200.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Administrator\Desktop\BrushOverridingPOC\App1\BrushOverridingPOC\Assets\SplashScreen.scale-200.png">
+    <AppxPackagedFile Include="C:\Users\Administrator\dev\POC\test\BrushOverridingPOC\BrushOverridingPOC\Assets\SplashScreen.scale-200.png">
       <PackagePath>Assets\SplashScreen.scale-200.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Administrator\Desktop\BrushOverridingPOC\App1\BrushOverridingPOC\Assets\Square150x150Logo.scale-200.png">
+    <AppxPackagedFile Include="C:\Users\Administrator\dev\POC\test\BrushOverridingPOC\BrushOverridingPOC\Assets\Square150x150Logo.scale-200.png">
       <PackagePath>Assets\Square150x150Logo.scale-200.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Administrator\Desktop\BrushOverridingPOC\App1\BrushOverridingPOC\Assets\Square44x44Logo.scale-200.png">
+    <AppxPackagedFile Include="C:\Users\Administrator\dev\POC\test\BrushOverridingPOC\BrushOverridingPOC\Assets\Square44x44Logo.scale-200.png">
       <PackagePath>Assets\Square44x44Logo.scale-200.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Administrator\Desktop\BrushOverridingPOC\App1\BrushOverridingPOC\Assets\Square44x44Logo.targetsize-24_altform-unplated.png">
+    <AppxPackagedFile Include="C:\Users\Administrator\dev\POC\test\BrushOverridingPOC\BrushOverridingPOC\Assets\Square44x44Logo.targetsize-24_altform-unplated.png">
       <PackagePath>Assets\Square44x44Logo.targetsize-24_altform-unplated.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Administrator\Desktop\BrushOverridingPOC\App1\BrushOverridingPOC\Assets\StoreLogo.png">
+    <AppxPackagedFile Include="C:\Users\Administrator\dev\POC\test\BrushOverridingPOC\BrushOverridingPOC\Assets\StoreLogo.png">
       <PackagePath>Assets\StoreLogo.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Administrator\Desktop\BrushOverridingPOC\App1\BrushOverridingPOC\Assets\Wide310x150Logo.scale-200.png">
+    <AppxPackagedFile Include="C:\Users\Administrator\dev\POC\test\BrushOverridingPOC\BrushOverridingPOC\Assets\Wide310x150Logo.scale-200.png">
       <PackagePath>Assets\Wide310x150Logo.scale-200.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Administrator\Desktop\BrushOverridingPOC\App1\BrushOverridingPOC\bin\x64\Debug\BrushOverridingPOC.xr.xml">
-      <PackagePath>BrushOverridingPOC.xr.xml</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Administrator\Desktop\BrushOverridingPOC\App1\BrushOverridingPOC\bin\x64\Debug\App.xbf">
-      <PackagePath>App.xbf</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Administrator\Desktop\BrushOverridingPOC\App1\BrushOverridingPOC\bin\x64\Debug\Themes\Generic.xbf">
-      <PackagePath>Themes\Generic.xbf</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Administrator\Desktop\BrushOverridingPOC\App1\BrushOverridingPOC\bin\x64\Debug\ZTemplatedFeedbackControl.xbf">
-      <PackagePath>ZTemplatedFeedbackControl.xbf</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Administrator\Desktop\BrushOverridingPOC\App1\BrushOverridingPOC\bin\x64\Debug\OverrideResourceDictionary.xbf">
-      <PackagePath>OverrideResourceDictionary.xbf</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Administrator\Desktop\BrushOverridingPOC\App1\BrushOverridingPOC\bin\x64\Debug\testControl.xbf">
-      <PackagePath>testControl.xbf</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Administrator\Desktop\BrushOverridingPOC\App1\BrushOverridingPOC\bin\x64\Debug\ZCommonDictionary.xbf">
-      <PackagePath>ZCommonDictionary.xbf</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Administrator\Desktop\BrushOverridingPOC\App1\BrushOverridingPOC\bin\x64\Debug\MainPage.xbf">
-      <PackagePath>MainPage.xbf</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Administrator\Desktop\BrushOverridingPOC\App1\BrushOverridingPOC\bin\x64\Debug\ZFeedbackControl.xbf">
-      <PackagePath>ZFeedbackControl.xbf</PackagePath>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Program Files %28x86%29\Windows Kits\10\UnionMetadata\10.0.22621.0\Windows.winmd">
       <PackagePath>WinMetadata\Windows.winmd</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Administrator\Desktop\BrushOverridingPOC\App1\BrushOverridingPOC\bin\x64\Debug\resources.pri">
+    <AppxPackagedFile Include="C:\Users\Administrator\dev\POC\test\BrushOverridingPOC\BrushOverridingPOC\bin\x64\Debug\resources.pri">
       <PackagePath>resources.pri</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Administrator\Desktop\BrushOverridingPOC\App1\BrushOverridingPOC\bin\x64\Debug\Core\BrushOverridingPOC.exe">
+    <AppxPackagedFile Include="C:\Users\Administrator\dev\POC\test\BrushOverridingPOC\BrushOverridingPOC\bin\x64\Debug\Core\BrushOverridingPOC.exe">
       <PackagePath>BrushOverridingPOC.exe</PackagePath>
     </AppxPackagedFile>
   </ItemGroup>
