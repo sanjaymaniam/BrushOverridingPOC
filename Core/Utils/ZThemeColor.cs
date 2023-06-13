@@ -35,7 +35,6 @@ namespace Core.Utils
         /// <summary>
         /// Represents the color used when the app is in Light theme.
         /// </summary>
-
         public Color ColorLight
         {
             get { return _colorLight; }
