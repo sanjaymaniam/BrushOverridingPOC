@@ -64,20 +64,8 @@
     <AppxPackagedFile Include="C:\Users\Administrator\dev\POC\test\BrushOverridingPOC\BrushOverridingPOC\bin\x64\Debug\Themes\Generic.xbf">
       <PackagePath>Themes\Generic.xbf</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Administrator\dev\POC\test\BrushOverridingPOC\BrushOverridingPOC\bin\x64\Debug\ZTemplatedFeedbackControl.xbf">
-      <PackagePath>ZTemplatedFeedbackControl.xbf</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Administrator\dev\POC\test\BrushOverridingPOC\BrushOverridingPOC\bin\x64\Debug\OverrideResourceDictionary.xbf">
-      <PackagePath>OverrideResourceDictionary.xbf</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Administrator\dev\POC\test\BrushOverridingPOC\BrushOverridingPOC\bin\x64\Debug\ZCommonDictionary.xbf">
-      <PackagePath>ZCommonDictionary.xbf</PackagePath>
-    </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Administrator\dev\POC\test\BrushOverridingPOC\BrushOverridingPOC\bin\x64\Debug\MainPage.xbf">
       <PackagePath>MainPage.xbf</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Administrator\dev\POC\test\BrushOverridingPOC\BrushOverridingPOC\bin\x64\Debug\ZFeedbackControl.xbf">
-      <PackagePath>ZFeedbackControl.xbf</PackagePath>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Administrator\dev\POC\test\BrushOverridingPOC\BrushOverridingPOC\bin\x64\Debug\BrushOverridingPOC.xr.xml">
       <PackagePath>BrushOverridingPOC.xr.xml</PackagePath>

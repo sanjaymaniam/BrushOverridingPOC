@@ -1,9 +1,15 @@
-﻿using System.ComponentModel;
+﻿using System;
+using System.ComponentModel;
 using System.Runtime.CompilerServices;
+using System.Windows.Input;
 using Windows.UI;
+using Windows.UI.Xaml;
 
 namespace Core.Utils
 {
+    /// <summary>
+    /// Wrapper class containing colors for dark and light mode. This allows us to change colors in run-time.
+    /// </summary>
     public class ZThemeColor : INotifyPropertyChanged
     {
         private Color _colorDark;
@@ -45,7 +51,7 @@ namespace Core.Utils
 
         public ZThemeColor()
         {
-            
+
         }
 
         public event PropertyChangedEventHandler PropertyChanged;
@@ -53,6 +59,19 @@ namespace Core.Utils
         protected virtual void OnPropertyChanged([CallerMemberName] string propertyName = null)
         {
             PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(propertyName));
+        }
+    }
+
+    public static class ZThemeHelper
+    {
+        public static void UpdateZThemeColor(string resourceKey, Color colorDark, Color colorLight)
+        {
+            var resource = Application.Current.Resources[resourceKey];
+            if (resource is ZThemeColor zThemeColor)
+            {
+                zThemeColor.ColorDark = colorDark;
+                zThemeColor.ColorLight = colorLight;
+            }
         }
     }
 }

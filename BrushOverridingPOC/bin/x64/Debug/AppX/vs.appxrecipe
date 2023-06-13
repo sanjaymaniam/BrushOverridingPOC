@@ -30,13 +30,13 @@
     <AppXManifest Include="C:\Users\Administrator\dev\POC\test\BrushOverridingPOC\BrushOverridingPOC\bin\x64\Debug\Core\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2023-06-12T15:02:20.640</Modified>
+      <Modified>2023-06-13T06:08:10.580</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
     <AppxPackagedFile Include="C:\Users\Administrator\dev\POC\test\BrushOverridingPOC\BrushOverridingPOC\bin\x64\Debug\BrushOverridingPOC.exe">
       <PackagePath>entrypoint\BrushOverridingPOC.exe</PackagePath>
-      <Modified>2023-06-12T15:02:19.934</Modified>
+      <Modified>2023-06-13T06:08:09.538</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Program Files %28x86%29\Microsoft SDKs\UWPNuGetPackages\runtime.win10-x64.microsoft.netcore.universalwindowsplatform\6.2.14\runtimes\win10-x64\lib\uap10.0.15138\System.Runtime.dll">
       <PackagePath>System.Runtime.dll</PackagePath>
@@ -44,11 +44,11 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Administrator\dev\POC\test\BrushOverridingPOC\Core\bin\x64\Debug\Core.dll">
       <PackagePath>Core.dll</PackagePath>
-      <Modified>2023-06-12T14:51:34.892</Modified>
+      <Modified>2023-06-13T06:08:04.501</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Administrator\dev\POC\test\BrushOverridingPOC\Feedback\bin\x64\Debug\Feedback.dll">
       <PackagePath>Feedback.dll</PackagePath>
-      <Modified>2023-06-12T14:53:58.058</Modified>
+      <Modified>2023-06-13T06:08:07.137</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Program Files %28x86%29\Windows Kits\10\bin\10.0.22621.0\XamlCompiler\Microsoft.UI.Xaml.Markup.winmd">
       <PackagePath>Microsoft.UI.Xaml.Markup.winmd</PackagePath>
@@ -56,59 +56,43 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Administrator\dev\POC\test\BrushOverridingPOC\Core\bin\x64\Debug\Core\CommonResourceDictionary.xbf">
       <PackagePath>Core\CommonResourceDictionary.xbf</PackagePath>
-      <Modified>2023-06-12T14:51:34.832</Modified>
+      <Modified>2023-06-13T06:08:04.455</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Administrator\dev\POC\test\BrushOverridingPOC\Core\bin\x64\Debug\Core\Themes\Generic.xbf">
       <PackagePath>Core\Themes\Generic.xbf</PackagePath>
-      <Modified>2023-06-12T14:51:34.833</Modified>
+      <Modified>2023-06-13T06:08:04.456</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Administrator\dev\POC\test\BrushOverridingPOC\Feedback\bin\x64\Debug\Feedback\ZTemplatedFeedbackControl.xbf">
       <PackagePath>Feedback\ZTemplatedFeedbackControl.xbf</PackagePath>
-      <Modified>2023-06-12T14:53:58.000</Modified>
+      <Modified>2023-06-13T06:08:07.096</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Administrator\dev\POC\test\BrushOverridingPOC\Feedback\bin\x64\Debug\Feedback\Themes\Generic.xbf">
       <PackagePath>Feedback\Themes\Generic.xbf</PackagePath>
-      <Modified>2023-06-12T14:53:58.000</Modified>
+      <Modified>2023-06-13T06:08:07.096</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Administrator\dev\POC\test\BrushOverridingPOC\Core\bin\x64\Debug\Core\Core.xr.xml">
       <PackagePath>Core\Core.xr.xml</PackagePath>
-      <Modified>2023-06-12T11:44:26.484</Modified>
+      <Modified>2023-06-13T02:39:29.815</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Administrator\dev\POC\test\BrushOverridingPOC\Feedback\bin\x64\Debug\Feedback\Feedback.xr.xml">
       <PackagePath>Feedback\Feedback.xr.xml</PackagePath>
-      <Modified>2023-06-12T14:53:57.993</Modified>
+      <Modified>2023-06-13T05:45:19.588</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Administrator\dev\POC\test\BrushOverridingPOC\BrushOverridingPOC\bin\x64\Debug\App.xbf">
       <PackagePath>App.xbf</PackagePath>
-      <Modified>2023-06-12T15:02:19.874</Modified>
+      <Modified>2023-06-13T06:08:09.491</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Administrator\dev\POC\test\BrushOverridingPOC\BrushOverridingPOC\bin\x64\Debug\Themes\Generic.xbf">
       <PackagePath>Themes\Generic.xbf</PackagePath>
-      <Modified>2023-06-12T15:02:19.873</Modified>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Administrator\dev\POC\test\BrushOverridingPOC\BrushOverridingPOC\bin\x64\Debug\ZTemplatedFeedbackControl.xbf">
-      <PackagePath>ZTemplatedFeedbackControl.xbf</PackagePath>
-      <Modified>2023-06-12T15:02:19.874</Modified>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Administrator\dev\POC\test\BrushOverridingPOC\BrushOverridingPOC\bin\x64\Debug\OverrideResourceDictionary.xbf">
-      <PackagePath>OverrideResourceDictionary.xbf</PackagePath>
-      <Modified>2023-06-12T15:02:19.874</Modified>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Administrator\dev\POC\test\BrushOverridingPOC\BrushOverridingPOC\bin\x64\Debug\ZCommonDictionary.xbf">
-      <PackagePath>ZCommonDictionary.xbf</PackagePath>
-      <Modified>2023-06-12T15:02:19.874</Modified>
+      <Modified>2023-06-13T06:08:09.491</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Administrator\dev\POC\test\BrushOverridingPOC\BrushOverridingPOC\bin\x64\Debug\MainPage.xbf">
       <PackagePath>MainPage.xbf</PackagePath>
-      <Modified>2023-06-12T15:02:19.874</Modified>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Administrator\dev\POC\test\BrushOverridingPOC\BrushOverridingPOC\bin\x64\Debug\ZFeedbackControl.xbf">
-      <PackagePath>ZFeedbackControl.xbf</PackagePath>
-      <Modified>2023-06-12T15:02:19.875</Modified>
+      <Modified>2023-06-13T06:08:09.491</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Administrator\dev\POC\test\BrushOverridingPOC\BrushOverridingPOC\bin\x64\Debug\BrushOverridingPOC.xr.xml">
       <PackagePath>BrushOverridingPOC.xr.xml</PackagePath>
-      <Modified>2023-06-12T14:55:16.763</Modified>
+      <Modified>2023-06-13T06:00:49.312</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Administrator\dev\POC\test\BrushOverridingPOC\BrushOverridingPOC\Properties\Default.rd.xml">
       <PackagePath>Properties\Default.rd.xml</PackagePath>
@@ -154,11 +138,11 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Administrator\dev\POC\test\BrushOverridingPOC\BrushOverridingPOC\bin\x64\Debug\resources.pri">
       <PackagePath>resources.pri</PackagePath>
-      <Modified>2023-06-12T14:51:43.209</Modified>
+      <Modified>2023-06-12T15:29:33.887</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Administrator\dev\POC\test\BrushOverridingPOC\BrushOverridingPOC\bin\x64\Debug\Core\BrushOverridingPOC.exe">
       <PackagePath>BrushOverridingPOC.exe</PackagePath>
-      <Modified>2023-06-12T15:02:20.633</Modified>
+      <Modified>2023-06-13T06:08:10.323</Modified>
     </AppxPackagedFile>
   </ItemGroup>
   <ItemGroup>

@@ -9,9 +9,5 @@ Assets\Wide310x150Logo.scale-200.png
 App.xbf
 BrushOverridingPOC.xr.xml
 MainPage.xbf
-OverrideResourceDictionary.xbf
 Themes\Generic.xbf
-ZCommonDictionary.xbf
-ZFeedbackControl.xbf
-ZTemplatedFeedbackControl.xbf
 Properties\Default.rd.xml

@@ -7,32 +7,44 @@
 
     <Application.Resources>
         <ResourceDictionary>
-            <!--
-                Here we're using a custom wrapper called ZThemeColor to store two different values for the color in light and dark theme.
-                XAML doesn't let us assign values to a color object once it's created, so this is done as a hacky workaround.
-            -->
-            <coreComponents:ZThemeColor
-                x:Key="ZAccentColorLow"
-                ColorDark="DeepSkyBlue"
-                ColorLight="DeepPink" />
-
             <ResourceDictionary.MergedDictionaries>
+                <ResourceDictionary>
+                    <!--
+                        Here we're using a custom wrapper class called ZThemeColor to store two different values for a color: one for the light theme and one for the dark theme.
+                        In XAML, once a color object is created, its value cannot be modified. However, we often need to change the color values dynamically, based on the theme
+                        and when the accent color is changed. To get around this limitation, we use the ZThemeColor class as a workaround.
+                        
+                        The ZThemeColor class implements the INotifyPropertyChanged interface. This means that it notifies the UI whenever one of its properties changes,
+                        in this case, the ColorDark and ColorLight properties. When we change these properties at runtime, the ZThemeColor instance raises the PropertyChanged event.
+                        The UI elements that use these properties as bindings will listen for this event and update their color accordingly.
+                        
+                        This allows us to have dynamic theme-specific colors in our XAML that can be updated at runtime.
+                    -->
+
+                    <coreComponents:ZThemeColor
+                        x:Key="ZAccentColorLow"
+                        ColorDark="DeepSkyBlue"
+                        ColorLight="DeepPink" />
+
+                    <!--  Other color resources that don't need to be changed in run-time can be of type Color, defined in Theme dictionaries  -->
+                </ResourceDictionary>
+
                 <ResourceDictionary Source="ms-appx:///Core/Themes/Generic.xaml" />
+
                 <!--  If we're going to override common brushes, we have to do it in this merged dictionaries collection and override them right below it  -->
                 <ResourceDictionary>
                     <ResourceDictionary.ThemeDictionaries>
                         <ResourceDictionary x:Key="Light">
                             <Color x:Key="ZFGColor">PaleGoldenRod</Color>
+                            <SolidColorBrush x:Key="ZAccentBrushMedium" Color="Gray" />
                         </ResourceDictionary>
                         <ResourceDictionary x:Key="Dark">
                             <Color x:Key="ZFGColor">GoldenRod</Color>
+                            <SolidColorBrush x:Key="ZAccentBrushMedium" Color="Red" />
                         </ResourceDictionary>
                     </ResourceDictionary.ThemeDictionaries>
                 </ResourceDictionary>
             </ResourceDictionary.MergedDictionaries>
-
-            <!--<coreComponents:ZThemeColor x:Key="ZAccentColorLow" Color="DeepPink" />-->
-            <!--<SolidColorBrush x:Key="ZAccentColorBrush" Color="{Binding Color, Source={ThemeResource ZAccentColorLow}, Mode=OneWay}" />-->
         </ResourceDictionary>
     </Application.Resources>
 </Application>

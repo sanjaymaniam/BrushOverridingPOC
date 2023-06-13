@@ -13,26 +13,34 @@
     <Page.Resources>
         <ResourceDictionary>
             <!--
-                The below code does not override our ZAccentColorLow,
-                because there's already a binding to values in original instance.
+                The below code does not override ZAccentColorLow,
+                because there's already a binding to ColorDark and ColorLight in
+                original instance that we defined in App.xaml.
             -->
+
             <!--<coreComponents:ZThemeColor
                 x:Key="ZAccentColorLow"
-                ColorDark="White"
-                ColorLight="Black" />-->
+                ColorDark="Orange"
+                ColorLight="DeepPink" />-->
         </ResourceDictionary>
     </Page.Resources>
 
-    <StackPanel>
-        <TextBlock Foreground="{StaticResource SystemControlForegroundTransparentBrush}" Text="Hello" />
-
+    <StackPanel Padding="20">
         <!--  Mimicking how the built-in button's resources can be overriden  -->
-        <feedbackProject:ZTemplatedFeedbackControl Text="Potato 1">
+        <feedbackProject:ZTemplatedFeedbackControl Text="ZTemplatedFeedbackForegroundBrush">
             <feedbackProject:ZTemplatedFeedbackControl.Resources>
                 <!--  You can override both ZTemplatedFeedbackForegroundBrush and ZFeedbackAccentColorBrush here, using a theme dictionary or static resources.  -->
             </feedbackProject:ZTemplatedFeedbackControl.Resources>
         </feedbackProject:ZTemplatedFeedbackControl>
 
-        <Button Click="Button_Click" Content="Toggle theme" />
+        <Button
+            Margin="0,12,0,0"
+            Click="Button_Click"
+            Content="Toggle theme" />
+
+        <Button
+            Margin="0,12,0,0"
+            Click="AccentButton_Click"
+            Content="Toggle accent color" />
     </StackPanel>
 </Page>

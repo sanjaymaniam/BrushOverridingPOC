@@ -30,14 +30,35 @@ namespace Feedback
 
         public ZTemplatedFeedbackControl()
         {
-            // Load the resource dictionary
-            //ResourceDictionary resourceDictionary = new ResourceDictionary();
-            //resourceDictionary.Source = new Uri("ms-appx:///Feedback/ZTemplatedFeedbackControl.xaml", UriKind.Absolute);
-
-            // Merge the resource dictionary into the control's resources
-            //this.Resources.MergedDictionaries.Add(resourceDictionary);
-
             this.DefaultStyleKey = typeof(ZTemplatedFeedbackControl);
+
+            // The control template for this control is defined in ZTemplatedFeedbackControl.xaml and merged into this project's
+            // generic.xaml file. As a result, we don't need to import or merge the resource dictionary defined in ZTemplatedFeedbackControl.xaml 
+            // directly into this control's resources.
+        }
+
+        public void SetZAccentBrushMedium()
+        {
+            var zAccentBrush = Application.Current.Resources["ZAccentBrushMedium"] as SolidColorBrush;
+            if (zAccentBrush != null)
+            {
+                // When we set ZAccentBrushMedium to Foreground like this, the value does not change on Theme change.
+                // As a workaround, we might have to listen to ActualThemeChanged and assign the brush from light or dark theme dictionaries again.
+                
+                RunIfTemplateChildExists<TextBlock>("ZFeedbackAccentColorBrushTb", tb =>
+                {
+                    tb.Foreground = zAccentBrush;
+                });
+            }
+        }
+
+        private void RunIfTemplateChildExists<T>(string childName, Action<T> actionToRunWithChild) where T : class
+        {
+            var childControl = GetTemplateChild(childName) as T;
+            if (childControl != null)
+            {
+                actionToRunWithChild(childControl);
+            }
         }
     }
 }

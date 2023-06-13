@@ -9,10 +9,13 @@
         <ResourceDictionary x:Key="Dark">
             <SolidColorBrush x:Key="ZTemplatedFeedbackForegroundBrush" Color="{ThemeResource ZFGColor}" />
             <SolidColorBrush x:Key="ZFeedbackAccentColorBrush" Color="{Binding ColorDark, Source={ThemeResource ZAccentColorLow}, Mode=OneWay}" />
+            <!--<SolidColorBrush x:Key="ZFeedbackAccentColorBrush" Color="{Binding Color, Source={ThemeResource ZAccentBrushMedium}, Mode=OneWay}" />-->
+
         </ResourceDictionary>
         <ResourceDictionary x:Key="Light">
             <SolidColorBrush x:Key="ZTemplatedFeedbackForegroundBrush" Color="{ThemeResource ZFGColor}" />
             <SolidColorBrush x:Key="ZFeedbackAccentColorBrush" Color="{Binding ColorLight, Source={ThemeResource ZAccentColorLow}, Mode=OneWay}" />
+            <!--<SolidColorBrush x:Key="ZFeedbackAccentColorBrush" Color="{Binding Color, Source={ThemeResource ZAccentBrushMedium}, Mode=OneWay}" />-->
         </ResourceDictionary>
     </ResourceDictionary.ThemeDictionaries>
 
@@ -27,12 +30,12 @@
                             Foreground="{ThemeResource ZTemplatedFeedbackForegroundBrush}"
                             Text="{TemplateBinding Text}" />
 
-
                         <TextBlock
+                            x:Name="ZFeedbackAccentColorBrushTb"
                             Margin="0,4,0,0"
                             FontSize="42"
                             Foreground="{ThemeResource ZFeedbackAccentColorBrush}"
-                            Text="Colored with ZThemeColor" />
+                            Text="Colored with ZThemeColor wrapper" />
 
                         <!--  can we use AttachmentControl here?  -->
                     </StackPanel>
