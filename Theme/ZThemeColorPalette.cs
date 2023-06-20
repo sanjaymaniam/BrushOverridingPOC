@@ -3,6 +3,9 @@ using Windows.UI.Xaml;
 
 namespace Theme
 {
+    using Windows.UI;
+    using Windows.UI.Xaml;
+
     public class ZThemeColorPalette : DependencyObject
     {
         #region Properties
@@ -11,6 +14,12 @@ namespace Theme
         {
             get { return (Color)GetValue(AccentColorProperty); }
             set { SetValue(AccentColorProperty, value); }
+        }
+
+        public Color AccentColorLowIntensity
+        {
+            get { return (Color)GetValue(AccentColorLowIntensityProperty); }
+            set { SetValue(AccentColorLowIntensityProperty, value); }
         }
 
         public Color AccentColorLowIntensityDarkTheme
@@ -25,6 +34,13 @@ namespace Theme
             set { SetValue(AccentColorLowIntensityLightThemeProperty, value); }
         }
 
+
+        public Color AccentColorMediumIntensity
+        {
+            get { return (Color)GetValue(AccentColorMediumIntensityProperty); }
+            set { SetValue(AccentColorMediumIntensityProperty, value); }
+        }
+
         public Color AccentColorMediumIntensityDarkTheme
         {
             get { return (Color)GetValue(AccentColorMediumIntensityDarkThemeProperty); }
@@ -35,6 +51,12 @@ namespace Theme
         {
             get { return (Color)GetValue(AccentColorMediumIntensityLightThemeProperty); }
             set { SetValue(AccentColorMediumIntensityLightThemeProperty, value); }
+        }
+
+        public Color AccentColorHighIntensity
+        {
+            get { return (Color)GetValue(AccentColorHighIntensityProperty); }
+            set { SetValue(AccentColorHighIntensityProperty, value); }
         }
 
         public Color AccentColorHighIntensityDarkTheme
@@ -48,7 +70,6 @@ namespace Theme
             get { return (Color)GetValue(AccentColorHighIntensityLightThemeProperty); }
             set { SetValue(AccentColorHighIntensityLightThemeProperty, value); }
         }
-
         #endregion
 
         #region Dependency Properties
@@ -59,6 +80,13 @@ namespace Theme
                 typeof(Color),
                 typeof(ZThemeColorPalette),
                 new PropertyMetadata(Colors.Blue, OnAccentColorChanged));
+
+        public static readonly DependencyProperty AccentColorLowIntensityProperty =
+            DependencyProperty.Register(
+                "AccentColorLowIntensity",
+                typeof(Color),
+                typeof(ZThemeColorPalette),
+                new PropertyMetadata(Colors.Black));
 
         public static readonly DependencyProperty AccentColorLowIntensityDarkThemeProperty =
             DependencyProperty.Register(
@@ -74,6 +102,13 @@ namespace Theme
                 typeof(ZThemeColorPalette),
                 new PropertyMetadata(Colors.White));
 
+        public static readonly DependencyProperty AccentColorMediumIntensityProperty =
+            DependencyProperty.Register(
+                "AccentColorMediumIntensity",
+                typeof(Color),
+                typeof(ZThemeColorPalette),
+                new PropertyMetadata(Colors.Gray));
+
         public static readonly DependencyProperty AccentColorMediumIntensityDarkThemeProperty =
             DependencyProperty.Register(
                 "AccentColorMediumIntensityDarkTheme",
@@ -84,6 +119,13 @@ namespace Theme
         public static readonly DependencyProperty AccentColorMediumIntensityLightThemeProperty =
             DependencyProperty.Register(
                 "AccentColorMediumIntensityLightTheme",
+                typeof(Color),
+                typeof(ZThemeColorPalette),
+                new PropertyMetadata(Colors.LightGray));
+
+        public static readonly DependencyProperty AccentColorHighIntensityProperty =
+            DependencyProperty.Register(
+                "AccentColorHighIntensity",
                 typeof(Color),
                 typeof(ZThemeColorPalette),
                 new PropertyMetadata(Colors.LightGray));
@@ -101,10 +143,9 @@ namespace Theme
                 typeof(Color),
                 typeof(ZThemeColorPalette),
                 new PropertyMetadata(Colors.White));
-
         #endregion
 
-        #region Constructor
+        #region Constructors
 
         public ZThemeColorPalette()
         {
@@ -117,7 +158,7 @@ namespace Theme
 
         #endregion
 
-        #region Color Changed Event Handlers
+        #region Event Handlers
 
         private static void OnAccentColorChanged(DependencyObject d, DependencyPropertyChangedEventArgs e)
         {
@@ -127,7 +168,7 @@ namespace Theme
 
         #endregion
 
-        #region Helper Methods
+        #region Methods
 
         private void UpdateAccentDependentColors()
         {
@@ -138,6 +179,11 @@ namespace Theme
             AccentColorMediumIntensityLightTheme = AdjustColorIntensity(AccentColor, 1.2);
             AccentColorHighIntensityDarkTheme = AdjustColorIntensity(AccentColor, 0.8);
             AccentColorHighIntensityLightTheme = AdjustColorIntensity(AccentColor, 1.6);
+
+            // Update accent intensity colors based on the accent color
+            AccentColorLowIntensity = AdjustColorIntensity(AccentColor, 0.3);
+            AccentColorMediumIntensity = AccentColor;
+            AccentColorHighIntensity = AdjustColorIntensity(AccentColor, 1.5);
         }
 
         private Color AdjustColorIntensity(Color color, double intensityFactor)
