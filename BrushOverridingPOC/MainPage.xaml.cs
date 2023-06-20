@@ -1,4 +1,5 @@
-﻿using Windows.UI;
+﻿using Core.Utils;
+using Windows.UI;
 using Windows.UI.Xaml;
 using Windows.UI.Xaml.Controls;
 using Windows.UI.Xaml.Media;
@@ -38,15 +39,15 @@ namespace BrushOverridingPOC
             // By changing the Color property of the SolidColorBrush, we ensure that all UI elements that reference this SolidColorBrush will see the change.
             // This wouldn't be the case if we were to replace the SolidColorBrush in the resources with a new one, because the existing UI elements would still have
             // references to the old brush.
-            var zAccentBrush = Application.Current.Resources["ZAccentBrushMedium"] as SolidColorBrush;
-            if (zAccentBrush != null)
-            {   if (zAccentBrush.Color == Colors.Red)
+            var zAccentThemeColor = Application.Current.Resources["ZAccentColorLow"] as ZThemeColor;
+            if (zAccentThemeColor != null)
+            {   if (zAccentThemeColor.ColorDark == Colors.Blue)
                 {
-                    (Application.Current.Resources["ZAccentBrushMedium"] as SolidColorBrush).Color = Colors.Green; // Change to the color you want
+                    zAccentThemeColor.ColorDark = Colors.Red;
                 }
                 else
                 {
-                    (Application.Current.Resources["ZAccentBrushMedium"] as SolidColorBrush).Color = Colors.Red; // Change to the color you want
+                    zAccentThemeColor.ColorDark = Colors.Blue;
                 }
             }
         }
