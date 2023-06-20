@@ -82,5 +82,5 @@ We've been exploring options to enable brush overriding for a UWP control that w
 
 - **CustomControl Approach**: If we're open to defining `ZFeedbackControl` as a custom control (with its structure defined in a ControlTemplate), users can override `ZTemplatedFeedbackForegroundBrush` directly in the parent control/page's resources. Additionally, the can also override `ZForegroundBrush` or `SystemControlForegroundBaseHighBrush` for the change to be reflected in all other controls using these brushes. 
 	- This approach seems more suitable for a pure UI component (like `ZCheckBox`) that doesn't need to interact with business logic directly.
-	- From a development perspective, this requires us to create events for button clicks and other user interactions explicitly within the control.
+	- From a development perspective, this requires us to subscribe to events for button clicks and other user interactions explicitly within the control.
 	- We also have to check if we're able to use other custom controls and user controls within this in XAML.
