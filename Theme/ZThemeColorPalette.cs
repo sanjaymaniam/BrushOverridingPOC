@@ -3,9 +3,6 @@ using Windows.UI.Xaml;
 
 namespace Theme
 {
-    using Windows.UI;
-    using Windows.UI.Xaml;
-
     public class ZThemeColorPalette : DependencyObject
     {
         #region Properties
@@ -52,6 +49,7 @@ namespace Theme
             get { return (Color)GetValue(AccentColorMediumIntensityLightThemeProperty); }
             set { SetValue(AccentColorMediumIntensityLightThemeProperty, value); }
         }
+
 
         public Color AccentColorHighIntensity
         {
