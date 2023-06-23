@@ -143,7 +143,7 @@ namespace Theme
                 new PropertyMetadata(Colors.White));
         #endregion
 
-        #region Constructors
+        #region Constructor
 
         public ZThemeColorPalette()
         {
@@ -170,18 +170,17 @@ namespace Theme
 
         private void UpdateAccentDependentColors()
         {
-            // Update accent-dependent colors based on the accent color
+            // Note: Actual logic for this function will vary. We'll also have to consider cases where muliplying by
+            // a factor won't do, and HEX code has to be set depending on accent color.
+
             AccentColorLowIntensityDarkTheme = AdjustColorIntensity(AccentColor, 0.4);
             AccentColorLowIntensityLightTheme = AdjustColorIntensity(AccentColor, 0.8);
+
             AccentColorMediumIntensityDarkTheme = AdjustColorIntensity(AccentColor, 0.6);
             AccentColorMediumIntensityLightTheme = AdjustColorIntensity(AccentColor, 1.2);
+
             AccentColorHighIntensityDarkTheme = AdjustColorIntensity(AccentColor, 0.8);
             AccentColorHighIntensityLightTheme = AdjustColorIntensity(AccentColor, 1.6);
-
-            // Update accent intensity colors based on the accent color
-            AccentColorLowIntensity = AdjustColorIntensity(AccentColor, 0.3);
-            AccentColorMediumIntensity = AccentColor;
-            AccentColorHighIntensity = AdjustColorIntensity(AccentColor, 1.5);
         }
 
         private Color AdjustColorIntensity(Color color, double intensityFactor)
@@ -195,5 +194,4 @@ namespace Theme
 
         #endregion
     }
-
 }

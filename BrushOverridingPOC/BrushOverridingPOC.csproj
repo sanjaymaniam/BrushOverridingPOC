@@ -157,6 +157,9 @@
     <PackageReference Include="Microsoft.NETCore.UniversalWindowsPlatform">
       <Version>6.2.14</Version>
     </PackageReference>
+    <PackageReference Include="Newtonsoft.Json">
+      <Version>13.0.3</Version>
+    </PackageReference>
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\Core\Core.csproj">
@@ -166,6 +169,10 @@
     <ProjectReference Include="..\Feedback\Feedback.csproj">
       <Project>{85268fe3-8860-4265-819b-3d7d8c686f69}</Project>
       <Name>Feedback</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Theme\Theme.csproj">
+      <Project>{d8b41c66-2d9a-443c-93f2-1de726f5d89a}</Project>
+      <Name>Theme</Name>
     </ProjectReference>
   </ItemGroup>
   <PropertyGroup Condition=" '$(VisualStudioVersion)' == '' or '$(VisualStudioVersion)' &lt; '14.0' ">

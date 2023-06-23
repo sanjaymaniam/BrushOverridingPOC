@@ -3,7 +3,9 @@
     xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
     xmlns:coreComponents="using:Core.Utils"
-    xmlns:local="using:BrushOverridingPOC">
+    xmlns:local="using:BrushOverridingPOC"
+    xmlns:theme="using:Theme"
+    xmlns:themeUtils="using:Core.Theme.Utils">
 
     <Application.Resources>
         <ResourceDictionary>
@@ -26,10 +28,31 @@
                         ColorDark="DeepSkyBlue"
                         ColorLight="DeepPink" />
 
+                    <theme:ZThemeColorPalette x:Key="ZThemeColorPaletteDictionary" AccentColor="DarkBlue" />
+
+                    <!--<themeUtils:ZAccentColorPalette
+                        x:Key="ZAppAccentColorPalette"
+                        ShouldUpdateAccentsOnSystemThemeChange="True"
+                        ZAccentColorDarkTheme="#FF0078D4"
+                        ZAccentColorDarkThemeDark1="#FF274156"
+                        ZAccentColorDarkThemeDark2="#FF006ABB"
+                        ZAccentColorDarkThemeDark3="#FF0065B2"
+                        ZAccentColorDarkThemeLight1="#FF172734"
+                        ZAccentColorDarkThemeLight2="#FF143147"
+                        ZAccentColorDarkThemeLight3="#FF104065"
+                        ZAccentColorLightTheme="#FF0078D4"
+                        ZAccentColorLightThemeDark1="#FFC8DBE8"
+                        ZAccentColorLightThemeDark2="#FF006ABB"
+                        ZAccentColorLightThemeDark3="#FF0065B2"
+                        ZAccentColorLightThemeLight1="#FFE4EEF5"
+                        ZAccentColorLightThemeLight2="#FFD2E5F4"
+                        ZAccentColorLightThemeLight3="#FFADD4F1" />-->
+
                     <!--  Other color resources that don't need to be changed in run-time can be of type Color, defined in Theme dictionaries  -->
                 </ResourceDictionary>
 
-                <ResourceDictionary Source="ms-appx:///Core/Themes/Generic.xaml" />
+                <!--<ResourceDictionary Source="ms-appx:///Core/Themes/Generic.xaml" />-->
+                <ResourceDictionary Source="ms-appx:///Core/ZXamlControlResourceDictionary.xaml" />
 
                 <!--  If we're going to override common brushes, we have to do it in this merged dictionaries collection and override them right below it  -->
                 <ResourceDictionary>

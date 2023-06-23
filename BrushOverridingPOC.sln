@@ -9,6 +9,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Feedback", "Feedback\Feedba
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Core", "Core\Core.csproj", "{3EC79E02-1A26-42B3-9C43-620B639D4D70}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Theme", "Theme\Theme.csproj", "{D8B41C66-2D9A-443C-93F2-1DE726F5D89A}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -93,6 +95,26 @@ Global
 		{3EC79E02-1A26-42B3-9C43-620B639D4D70}.Release|x64.Build.0 = Release|x64
 		{3EC79E02-1A26-42B3-9C43-620B639D4D70}.Release|x86.ActiveCfg = Release|x86
 		{3EC79E02-1A26-42B3-9C43-620B639D4D70}.Release|x86.Build.0 = Release|x86
+		{D8B41C66-2D9A-443C-93F2-1DE726F5D89A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D8B41C66-2D9A-443C-93F2-1DE726F5D89A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D8B41C66-2D9A-443C-93F2-1DE726F5D89A}.Debug|ARM.ActiveCfg = Debug|ARM
+		{D8B41C66-2D9A-443C-93F2-1DE726F5D89A}.Debug|ARM.Build.0 = Debug|ARM
+		{D8B41C66-2D9A-443C-93F2-1DE726F5D89A}.Debug|ARM64.ActiveCfg = Debug|ARM64
+		{D8B41C66-2D9A-443C-93F2-1DE726F5D89A}.Debug|ARM64.Build.0 = Debug|ARM64
+		{D8B41C66-2D9A-443C-93F2-1DE726F5D89A}.Debug|x64.ActiveCfg = Debug|x64
+		{D8B41C66-2D9A-443C-93F2-1DE726F5D89A}.Debug|x64.Build.0 = Debug|x64
+		{D8B41C66-2D9A-443C-93F2-1DE726F5D89A}.Debug|x86.ActiveCfg = Debug|x86
+		{D8B41C66-2D9A-443C-93F2-1DE726F5D89A}.Debug|x86.Build.0 = Debug|x86
+		{D8B41C66-2D9A-443C-93F2-1DE726F5D89A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D8B41C66-2D9A-443C-93F2-1DE726F5D89A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D8B41C66-2D9A-443C-93F2-1DE726F5D89A}.Release|ARM.ActiveCfg = Release|ARM
+		{D8B41C66-2D9A-443C-93F2-1DE726F5D89A}.Release|ARM.Build.0 = Release|ARM
+		{D8B41C66-2D9A-443C-93F2-1DE726F5D89A}.Release|ARM64.ActiveCfg = Release|ARM64
+		{D8B41C66-2D9A-443C-93F2-1DE726F5D89A}.Release|ARM64.Build.0 = Release|ARM64
+		{D8B41C66-2D9A-443C-93F2-1DE726F5D89A}.Release|x64.ActiveCfg = Release|x64
+		{D8B41C66-2D9A-443C-93F2-1DE726F5D89A}.Release|x64.Build.0 = Release|x64
+		{D8B41C66-2D9A-443C-93F2-1DE726F5D89A}.Release|x86.ActiveCfg = Release|x86
+		{D8B41C66-2D9A-443C-93F2-1DE726F5D89A}.Release|x86.Build.0 = Release|x86
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

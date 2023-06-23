@@ -121,6 +121,9 @@
   </PropertyGroup>
   <ItemGroup>
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Theme\Utils\ZAccentColorPalette.cs" />
+    <Compile Include="Theme\Utils\ZThemeHelpers.cs" />
+    <Compile Include="Theme\Utils\ZThemeListener.cs" />
     <Compile Include="Utils\ZThemeColor.cs" />
     <Compile Include="ZXamlControlResources.cs" />
     <EmbeddedResource Include="Properties\Core.rd.xml" />
@@ -139,6 +142,16 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </Page>
+    <Page Include="ZXamlControlResourceDictionary.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Theme\Theme.csproj">
+      <Project>{d8b41c66-2d9a-443c-93f2-1de726f5d89a}</Project>
+      <Name>Theme</Name>
+    </ProjectReference>
   </ItemGroup>
   <PropertyGroup Condition=" '$(VisualStudioVersion)' == '' or '$(VisualStudioVersion)' &lt; '14.0' ">
     <VisualStudioVersion>14.0</VisualStudioVersion>

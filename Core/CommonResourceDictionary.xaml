@@ -1,4 +1,7 @@
-﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+﻿<ResourceDictionary
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:themeUtils="using:Core.Theme.Utils">
     <ResourceDictionary.ThemeDictionaries>
         <ResourceDictionary x:Key="Light">
             <Color x:Key="ZFGColor">Red</Color>
@@ -12,4 +15,26 @@
             <SolidColorBrush x:Key="ZAccentBrushMedium" Color="DeepSkyBlue" />
         </ResourceDictionary>
     </ResourceDictionary.ThemeDictionaries>
+
+    <themeUtils:ZAccentColorPalette
+        x:Key="ZAppAccentColorPalette"
+        ShouldUpdateAccentsOnSystemThemeChange="True"
+        ZAccentColorDarkTheme="#FF0078D4"
+        ZAccentColorDarkThemeDark1="#FF274156"
+        ZAccentColorDarkThemeDark2="#FF006ABB"
+        ZAccentColorDarkThemeDark3="#FF0065B2"
+        ZAccentColorDarkThemeLight1="#FF172734"
+        ZAccentColorDarkThemeLight2="#FF143147"
+        ZAccentColorDarkThemeLight3="#FF104065"
+        ZAccentColorLightTheme="#FF0078D4"
+        ZAccentColorLightThemeDark1="#FFC8DBE8"
+        ZAccentColorLightThemeDark2="#FF006ABB"
+        ZAccentColorLightThemeDark3="#FF0065B2"
+        ZAccentColorLightThemeLight1="#FFE4EEF5"
+        ZAccentColorLightThemeLight2="#FFD2E5F4"
+        ZAccentColorLightThemeLight3="#FFADD4F1" />
+
+    <!--<ResourceDictionary.MergedDictionaries>
+        <ResourceDictionary Source="ms-appx:///Core/Theme/ZAccentColorsResourceDictionary.xaml" />
+    </ResourceDictionary.MergedDictionaries>-->
 </ResourceDictionary>

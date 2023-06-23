@@ -3,19 +3,15 @@
     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
     xmlns:local="using:Feedback">
 
-    <!--<SolidColorBrush x:Key="ZTemplatedFeedbackForegroundBrush" Color="{ThemeResource ZFGColor}" />-->
-
     <ResourceDictionary.ThemeDictionaries>
-        <ResourceDictionary x:Key="Dark">
-            <SolidColorBrush x:Key="ZTemplatedFeedbackForegroundBrush" Color="{ThemeResource ZFGColor}" />
-            <SolidColorBrush x:Key="ZFeedbackAccentColorBrush" Color="{Binding ColorDark, Source={ThemeResource ZAccentColorLow}, Mode=OneWay}" />
-            <!--<SolidColorBrush x:Key="ZFeedbackAccentColorBrush" Color="{Binding Color, Source={ThemeResource ZAccentBrushMedium}, Mode=OneWay}" />-->
-
-        </ResourceDictionary>
         <ResourceDictionary x:Key="Light">
             <SolidColorBrush x:Key="ZTemplatedFeedbackForegroundBrush" Color="{ThemeResource ZFGColor}" />
-            <SolidColorBrush x:Key="ZFeedbackAccentColorBrush" Color="{Binding ColorLight, Source={ThemeResource ZAccentColorLow}, Mode=OneWay}" />
-            <!--<SolidColorBrush x:Key="ZFeedbackAccentColorBrush" Color="{Binding Color, Source={ThemeResource ZAccentBrushMedium}, Mode=OneWay}" />-->
+            <SolidColorBrush x:Key="ZFeedbackAccentColorBrush" Color="{Binding ZAccentColorLightTheme, Source={ThemeResource ZAppAccentColorPalette}, Mode=OneWay}" />
+        </ResourceDictionary>
+
+        <ResourceDictionary x:Key="Dark">
+            <SolidColorBrush x:Key="ZTemplatedFeedbackForegroundBrush" Color="{ThemeResource ZFGColor}" />
+            <SolidColorBrush x:Key="ZFeedbackAccentColorBrush" Color="{Binding ZAccentColorDarkTheme, Source={ThemeResource ZAppAccentColorPalette}, Mode=OneWay}" />
         </ResourceDictionary>
     </ResourceDictionary.ThemeDictionaries>
 
@@ -35,9 +31,7 @@
                             Margin="0,4,0,0"
                             FontSize="42"
                             Foreground="{ThemeResource ZFeedbackAccentColorBrush}"
-                            Text="Colored with ZThemeColor wrapper" />
-
-                        <!--  can we use AttachmentControl here?  -->
+                            Text="Colored with ZAppAccentColorPalette.ZAccentColor" />
                     </StackPanel>
                 </ControlTemplate>
             </Setter.Value>
