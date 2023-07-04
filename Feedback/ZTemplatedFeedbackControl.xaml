@@ -3,7 +3,8 @@
     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
     xmlns:local="using:Feedback">
 
-    <ResourceDictionary.ThemeDictionaries>
+    <!--  You can explicitly control which resources are used in light and dark theme by defining brushes in a theme dictionary  -->
+    <!--<ResourceDictionary.ThemeDictionaries>
         <ResourceDictionary x:Key="Light">
             <SolidColorBrush x:Key="ZTemplatedFeedbackForegroundBrush" Color="{ThemeResource ZFGColor}" />
             <SolidColorBrush x:Key="ZFeedbackAccentColorBrush" Color="{Binding ZAccentColorLightTheme, Source={ThemeResource ZAppAccentColorPalette}, Mode=OneWay}" />
@@ -13,7 +14,11 @@
             <SolidColorBrush x:Key="ZTemplatedFeedbackForegroundBrush" Color="{ThemeResource ZFGColor}" />
             <SolidColorBrush x:Key="ZFeedbackAccentColorBrush" Color="{Binding ZAccentColorDarkTheme, Source={ThemeResource ZAppAccentColorPalette}, Mode=OneWay}" />
         </ResourceDictionary>
-    </ResourceDictionary.ThemeDictionaries>
+    </ResourceDictionary.ThemeDictionaries>-->
+
+    <!--  Or if the default values for dark and light theme, switched by the framework, or by custom wrappers, will do, you can define them without theme dictionary  -->
+    <SolidColorBrush x:Key="ZTemplatedFeedbackForegroundBrush" Color="{ThemeResource ZFGColor}" />
+    <SolidColorBrush x:Key="ZFeedbackAccentColorBrush" Color="{Binding ZAccentColor, Source={ThemeResource ZAppAccentColorPalette}, Mode=OneWay}" />
 
     <!--  Define the control template for ZTemplatedFeedbackControl  -->
     <Style TargetType="local:ZTemplatedFeedbackControl">
